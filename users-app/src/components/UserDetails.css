@@ -1,0 +1,131 @@
+.outerContainer{
+   background-color: rgb(230, 173, 173);
+   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f8fafc;
+  padding-top: 40px;
+ 
+}
+.outerContainer h2 {
+    color: rgba(4, 4, 207, 0.566);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   
+  
+}
+.user-details{
+    
+    background-color: white;
+    padding: 50px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.678);
+    animation: fadeIn ;
+    animation-delay: none;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(60, 60, 120, 0.10);
+  padding: 36px 32px 28px 32px;
+  min-width: 340px;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+@keyframes fadeIn {
+    from {
+        transform: rotate3d(1, 0, 0, 90deg) translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+Button{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin-right: 50px;
+}
+
+Button:hover{
+  background-color: red;
+ cursor: pointer;
+
+}
+.user-details h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.user-details p {
+  font-size: 1.1rem;
+  color: #22223b;
+  margin: 12px 0;
+  padding: 8px 0 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.user-details p:last-child {
+  border-bottom: none;
+}
+
+.deleteButton, .update {
+  margin: 18px 10px 0 0;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.10);
+}
+.backbutton{
+  background-color: blue;
+  padding: 10px 25px;
+  margin-top: 20px;
+}
+.backbutton:hover{
+  background-color: rgb(0, 0, 168);
+ scale: 1.02;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+.update{
+  background: rgb(1, 175, 1);
+  margin-left: 50px;
+}
+.update:hover{
+  background: green;
+  scale: 1.02;
+}
+.deleteButton{
+  background-color: red;
+}
+.deleteButton:hover {
+  background: rgba(255, 0, 0, 0.658);
+  scale: 1.02;
+}
+.userForm{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 20px;
+
+}
